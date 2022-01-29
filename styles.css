@@ -1,0 +1,92 @@
+/*
+Global
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {height: 100vh;}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+base calculator styles
+*/
+.calculator {
+    height: 600px;
+    width: 300px;
+    background-color: #080808;
+    border-radius: 5px;
+}
+
+/*
+upper part of the calculator
+*/
+.upper {
+    height: 40%;
+}
+
+#divider {
+    width: 90%;
+    margin: auto;
+}
+
+/*
+lower part of the calculator
+*/
+.lower {
+    height: 60%;
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+/*
+buttons
+*/
+.calc-button {
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 50%;
+    font-size: larger;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.calc-button:hover {
+    cursor: pointer;
+    background-color: #4B4B4B;
+}
+
+.calc-button:disabled {
+    background-color: #4B4B4B;
+    cursor: auto;
+}
+
+.calc-button.clear {
+    color: #865e44;
+}
+
+.calc-button.operator {
+    color: #47793c;
+}
+
+.calc-button.num {
+    color: white;
+}
+
+.calc-button.equals {
+    background-color: #477417;
+}
+
+.calc-button.equals:hover {
+    background-color: #6B8F45;
+}
