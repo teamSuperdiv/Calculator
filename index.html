@@ -10,27 +10,23 @@
 </head>
 <body>
     <header>
-        <h1>Calculator</h1>
+        <h1>Simple Calculator</h1>
     </header>
     <main>
         <div class="calculator">
             <div class="upper">
-
+                <h1 class="calc-sequence"></h1>
+                <h2 class="solution"></h2>
+                <div class="delete" onclick="deleteLastEntry()">
+                    <img src="./img/delete.png" height="20" width="20" alt="">
+                </div>
             </div>
             <hr id="divider">
             <div class="lower">
-                <button class="calc-button clear">
-                    C
-                </button>
-                <button class="calc-button operator" disabled>
-                    ( )
-                </button>
-                <button class="calc-button operator">
-                    %
-                </button>
-                <button class="calc-button operator">
-                    /
-                </button>
+                <button class="calc-button clear" onclick="clearAll()">C</button>
+                <button class="calc-button" disabled>( )</button>
+                <button class="calc-button percent">%</button>
+                <button class="calc-button operator">&divide;</button>
                 <button class="calc-button num" data-num="7">7</button>
                 <button class="calc-button num" data-num="8">8</button>
                 <button class="calc-button num" data-num="9">9</button>
@@ -38,7 +34,7 @@
                 <button class="calc-button num" data-num="4">4</button>
                 <button class="calc-button num" data-num="5">5</button>
                 <button class="calc-button num" data-num="6">6</button>
-                <button class="calc-button operator">-</button>
+                <button class="calc-button operator">&minus;</button>
                 <button class="calc-button num" data-num="1">1</button>
                 <button class="calc-button num" data-num="2">2</button>
                 <button class="calc-button num" data-num="3">3</button>
@@ -46,12 +42,12 @@
                 <button class="calc-button num" disabled>+/-</button>
                 <button class="calc-button num" data-num="0">0</button>
                 <button class="calc-button num">.</button>
-                <button class="calc-button num equals">=</button>
+                <button class="calc-button equals">=</button>
             </div>
         </div>
     </main>
     <footer>
-
+        <p>made by &copy;teamSuperdiv</p>
     </footer>
     <script src="./app.js"></script>
 </body>
