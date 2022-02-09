@@ -54,14 +54,15 @@ upper part of the calculator
     padding: 15px 25px;
 }
 
-.upper h1 {
+.upper h2 {
     color: white;
     text-align: right;
     margin-bottom: 2rem;
+    overflow: scroll;
 }
 
-.upper h2 {
-    color: gray;
+.upper h1 {
+    color: #47793c;
     text-align: right;
 }
 
@@ -106,13 +107,16 @@ buttons
     background-color: #4B4B4B;
 }
 
-.calc-button:disabled {
+/* .calc-button:disabled {
     background-color: #4B4B4B;
     cursor: auto;
-}
+} */
 
 .calc-button.clear {
     color: #865e44;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 30px;
 }
 
 .calc-button.operator,
@@ -126,9 +130,15 @@ buttons
 
 .calc-button.equals {
     color: white;
-    background-color: #477417;
+    background-color: #47793c;
 }
 
 .calc-button.equals:hover {
     background-color: #6B8F45;
+}
+
+.calc-button[data-num="0"] {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 30px;
 }
