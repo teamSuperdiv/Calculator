@@ -25,11 +25,11 @@ document.addEventListener('click', (e) => {
         }
     } else if (e.target.classList.contains('operator')) {
         point.disabled = false;
-        if (!currentNum == '') {
+        if (!currentNum == '' && operator == '') {
             pushNumberToArr(operands, currentNum);
             updateSum(operator);
+            currentNum = '';
             operator = e.target.textContent;
-            currentNum = "";
             calc_sequence.textContent += e.target.textContent;
         }
     } else if (e.target.classList.contains('equals')) {
@@ -37,11 +37,10 @@ document.addEventListener('click', (e) => {
             equalsClicked = true;
             pushNumberToArr(operands, currentNum);
             updateSum(operator);
-            currentNum = "";
+            currentNum = '';
         } 
     }
 })
-
 
 // updates the array of operands
 function updateSum(operator) {
