@@ -1,7 +1,7 @@
 let operands = []
 let interimSol
 let operator = ''
-let currentNum = document.querySelector('.currentNum').textContent
+let currentNum = ''
 let equalsClicked = false
 let solution = document.querySelector('.solution')
 let calc_sequence = document.querySelector('.calc-sequence')
