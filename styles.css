@@ -58,7 +58,7 @@ upper part of the calculator
     color: white;
     text-align: right;
     margin-bottom: 2rem;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
 .upper h1 {
