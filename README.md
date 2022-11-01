@@ -35,4 +35,6 @@ Users can get floating point numbers if they do the math required to get one, bu
 ### Notes
 My design is inspired by the Samsung Calculator with the dark mode and green and white buttons.
 
+Here is the live preview: https://teamsuperdiv.github.io/Calculator/
+
 Enjoy calculating!
